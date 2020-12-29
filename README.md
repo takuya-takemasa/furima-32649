@@ -40,8 +40,8 @@
 
 | Column        | type       | Options     |
 | ------------- | ---------- | ----------- |
-| item          | string     | null: false | 
-| user          | string     | null: false | 
+| item          | references | null: false | 
+| user          | references | null: false | 
 
 ### Association
 -belongs_to:user
@@ -50,15 +50,15 @@
 
 ##street_addressテーブル
 
-| Column        | type       | Options     |
-| ------------- | ---------- | ----------- |
-| postal_code   | string     | null: false | <!-- 郵便番号 -->
-| prefecture_id | string     | null: false | <!-- 都道府県 -->
-| city          | string     | null: false | <!-- 市町村 -->
-| block         | string     | null: false | <!-- 番地 -->
-| building      | string     |             | <!-- 建物 -->
-| phone_number  | string     | null: false | <!-- 電話番号 -->
-| order         | string     | null: false | <!-- 注文 -->
+| Column        | type       | Options                      |
+| ------------- | ---------- | ---------------------------- |
+| postal_code   | string     | null: false                  | <!-- 郵便番号 -->
+| prefecture_id | integer    | null: false                  | <!-- 都道府県 -->
+| city          | string     | null: false                  | <!-- 市町村 -->
+| block         | string     | null: false                  | <!-- 番地 -->
+| building      | string     |                              | <!-- 建物 -->
+| phone_number  | string     | null: false                  | <!-- 電話番号 -->
+| order         | references | null: false, foreign_key:true| <!-- 注文 -->
 
 ### Association
 -belongs_to:order

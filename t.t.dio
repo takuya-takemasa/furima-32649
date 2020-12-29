@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-12-29T05:41:54.981Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="kkwG6PxtVMy6Acv2qF6x" version="13.10.0" type="embed">
+<mxfile host="65bd71144e" modified="2020-12-29T06:27:27.889Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="y9MyWZWxflUVdy4-daN6" version="13.10.0" type="embed">
     <diagram id="OAioPRuhb3YSriwee5y9" name="ページ1">
         <mxGraphModel dx="684" dy="401" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
@@ -13,7 +13,7 @@
                 <mxCell id="81" value="itemsテーブル" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
                     <mxGeometry x="610" y="40" width="210" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="82" value="：product_name&#10;：product_explanation&#10;：category&#10;：product_state&#10;：delivery&#10; : distribution_area&#10; : shipping_number&#10; : price" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="81" vertex="1">
+                <mxCell id="82" value="：product_name&#10;：product_explanation&#10;：category&#10;：product_state&#10;：delivery&#10; : distribution_area&#10; : shipping_number&#10; : price&#10; :user_id" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="81" vertex="1">
                     <mxGeometry y="30" width="210" height="140" as="geometry"/>
                 </mxCell>
                 <mxCell id="83" value="street addressテーブル" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
