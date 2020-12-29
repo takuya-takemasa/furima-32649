@@ -2,16 +2,16 @@
 
 ##users テーブル
 
-| Column            | Type   | Options                   |
-| ----------------- | -------| ------------------------- |
-| nickname          | string | null: false               | <!-- ニックネーム -->　
-| email             | string | null: false, unique:true | <!-- メール-->
-| encrpted_password | string | null: false               | <!-- パスワード -->
-| fast_name         | string | null: false               | <!-- 名字 -->
-| last_name         | string | null: false               | <!-- 名前 -->
-| fast_name_kana    | string | null: false               | <!-- 名字カナ -->
-| last_name_kana    | string | null: false               | <!-- 名前カナ --> 
-| birth_day         | date   | null: false               | <!-- 誕生日 -->
+| Column             | Type   | Options                   |
+| -----------------  | -------| ------------------------- |
+| nickname           | string | null: false               | <!-- ニックネーム -->　
+| email              | string | null: false, unique:true  | <!-- メール-->
+| encrypted_password | string | null: false               | <!-- パスワード -->
+| fast_name          | string | null: false               | <!-- 名字 -->
+| last_name          | string | null: false               | <!-- 名前 -->
+| fast_name_kana     | string | null: false               | <!-- 名字カナ -->
+| last_name_kana     | string | null: false               | <!-- 名前カナ --> 
+| birth_day          | date   | null: false               | <!-- 誕生日 -->
 
 ### Association
 -has_many:orders
