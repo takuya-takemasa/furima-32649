@@ -4,7 +4,7 @@
 
 | Column            | Type   | Options                   |
 | ----------------- | -------| ------------------------- |
-| nikuname          | string | null: false               | <!-- ニックネーム -->　
+| nickuname          | string | null: false              | <!-- ニックネーム -->　
 | email             | string | null: false, uniaue:turue | <!-- メール-->
 | encrpted_password | string | null: false               | <!-- パスワード -->
 | fast_name         | string | null: false               | <!-- 名字 -->
@@ -20,20 +20,20 @@
 
 ##items テーブル
 
-| Column               | type    | Options                      |
-| -------------------  | ------- | ---------------------------- |
-| product_name         | string  | null: false                  | <!-- 商品名 -->
-| product_explanation  | text    | null: false                  | <!-- 商品説明 -->
-| category_id          | integer | null: false                  | <!-- カテゴリー -->
-| product_state_id     | integer | null: false                  | <!-- 商品状態 -->
-| delivery_id          | integer | null: false                  | <!-- 配送料 -->
-| distribution_area_id | integer | null: false                  | <!-- 配送地域 -->
-| shipping_number_id   | integer | null: false                  | <!-- 配送日数 -->
-| price                | integer | null: false, foreign_key:ture| <!-- 価格 -->
+| Column               | type    | Options     |
+| -------------------  | ------- | ----------- |
+| product_name         | string  | null: false | <!-- 商品名 -->
+| product_explanation  | text    | null: false | <!-- 商品説明 -->
+| category_id          | integer | null: false | <!-- カテゴリー -->
+| product_state_id     | integer | null: false | <!-- 商品状態 -->
+| delivery_id          | integer | null: false | <!-- 配送料 -->
+| distribution_area_id | integer | null: false | <!-- 配送地域 -->
+| shipping_number_id   | integer | null: false | <!-- 配送日数 -->
+| price                | integer | null: false | <!-- 価格 -->
 
 ### Association
--has_many:oreders
--has_many:items
+-has_one:oreder
+-belongs_to:user
 
 
 ##ordersテーブル
