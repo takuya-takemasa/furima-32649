@@ -1,10 +1,10 @@
 # README
 
-##users テーブル
+## users テーブル
 
 | Column             | Type   | Options                   |
 | -----------------  | -------| ------------------------- |
-| nickname           | string | null: false               | <!-- ニックネーム -->　
+| nickname           | string | null: false               | <!-- ニックネイム-->
 | email              | string | null: false, unique:true  | <!-- メール-->
 | encrypted_password | string | null: false               | <!-- パスワード -->
 | fast_name          | string | null: false               | <!-- 名字 -->
@@ -18,7 +18,7 @@
 -has_many:items
 
 
-##items テーブル
+## items テーブル
 
 | Column              | type       | Options                      |
 | ------------------- | -------    | -----------                  |
@@ -37,7 +37,7 @@
 -belongs_to:user
 
 
-##ordersテーブル
+## ordersテーブル
 
 | Column        | type       | Options                      |
 | ------------- | ---------- | ---------------------------- |
@@ -49,7 +49,7 @@
 -belongs_to:item
 -has_one:street_address
 
-##street_addressテーブル
+## street_addressテーブル
 
 | Column        | type       | Options                      |
 | ------------- | ---------- | ---------------------------- |
