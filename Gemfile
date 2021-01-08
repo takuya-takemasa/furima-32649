@@ -66,3 +66,7 @@ gem 'pry-rails'
 gem 'factory_bot_rails'
   
 gem 'faker'
+
+gem 'mini_magick'
+
+gem 'active_hash'
