@@ -112,9 +112,15 @@ RSpec.describe Item, type: :model do
       end
       
       it '価格を半角数字で入力しなければ商品は保存できない' do
-        @item.price = 500
+        @item.price = "５００"
         @item.valid?
-        expect(@item.errors.full_messages).to include()
+        expect(@item.errors.full_messages).to include("Price is not a number")
+      end
+      
+      it '価格に英字が含まれると保存できない' do
+        @item.price = "123abc"
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Price is not a number")
       end
       
       it 'ユーザーが紐付いていないと商品は保存できない' do
