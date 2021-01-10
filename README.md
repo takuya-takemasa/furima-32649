@@ -25,9 +25,9 @@
 | product_name        | string     | null: false                  | <!-- 商品名 -->
 | product_explanation | text       | null: false                  | <!-- 商品説明 -->
 | category_id         | integer    | null: false                  | <!-- カテゴリー -->
-| product_state_id    | integer    | null: false                  | <!-- 商品状態 -->
-| delivery_id         | integer    | null: false                  | <!-- 配送料 -->
-| prefecture_id       | integer    | null: false                  | <!-- 配送地域 -->
+| product_state_id    | integer    | null: false                  | <!-- 配送地域 -->
+| delivery_id         | integer    | null: false                  | <!-- 商品状態 -->
+| prefecture_id       | integer    | null: false                  | <!-- 配送料 -->
 | shipping_number_id  | integer    | null: false                  | <!-- 配送日数 -->
 | price               | integer    | null: false                  | <!-- 価格 -->
 | user                | references | null: false, foreign_key:true| 
