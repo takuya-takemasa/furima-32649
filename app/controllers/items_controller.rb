@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, except: [:new, :create, :show]
+  before_action :authenticate_user!, except: [:index, :show]
   
   def index 
     @items = Item.all.order("created_at DESC")
@@ -29,4 +29,3 @@ class ItemsController < ApplicationController
   end
 
 end
-#  binding.pry
