@@ -2,13 +2,13 @@ class OrdersController < ApplicationController
   before_action :authenticate_user!, only: [:index, :create]
   before_action :detect_item, only: [:index, :create]
   def index
-    @item = Item.find(params[:item_id])
+    
     @order_furima = OrderFurima.new 
     redirect_to root_path if @item.order.present? || @item.user_id == current_user.id
   end
 
   def create
-    @item = Item.find(params[:item_id])
+    
     @order_furima = OrderFurima.new(order_furima_params)
     if @order_furima.valid?
       pay_item
