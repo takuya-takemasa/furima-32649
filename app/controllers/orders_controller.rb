@@ -11,6 +11,7 @@ class OrdersController < ApplicationController
     @item = Item.find(params[:item_id])
     @order_furima = OrderFurima.new(order_furima_params)
     if @order_furima.valid?
+      pay_item
       @order_furima.save
       redirect_to root_path
     else
@@ -31,7 +32,7 @@ class OrdersController < ApplicationController
     Payjp.api_key = ENV["PAYJP_SECRET_KEY"]
     Payjp::Charge.create(
       amount: @item.price,
-      card: order_form_params[:token],
+      card: order_furima_params[:token],
       currency: 'jpy'
     )
   end
