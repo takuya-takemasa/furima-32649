@@ -70,3 +70,5 @@ gem 'faker'
 gem 'mini_magick'
 
 gem 'active_hash'
+
+gem 'payjp'
